@@ -1,0 +1,36 @@
+.container {
+	transform: matrix(1, 0, 0, 1, 0, 0);
+	// padding-bottom: 100px;
+	// position: absolute;
+}
+
+.animation {
+	animation-name: animation_scale_in, animation_fade_in;
+	animation-duration: 0.8s;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+}
+
+@keyframes animation_scale_in {
+	0% {
+		transform: matrix(0.5, 0, 0, 0.5, 0, 0);
+		opacity: 1;
+		animation-timing-function: ease-out;
+	}
+	100% {
+		transform: matrix(1, 0, 0, 1, 0, 0);
+		opacity: 1;
+	}
+}
+
+@keyframes animation_fade_in {
+	0% {
+		opacity: 0.1;
+		animation-timing-function: ease-out;
+	}
+	100% {
+		opacity: 1;
+	}
+}

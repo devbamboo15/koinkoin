@@ -1,0 +1,10 @@
+.dropdownListItem {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	&:hover {
+		background: #1f6b88;
+		color: #fff;
+	}
+	padding: 2px 3px;
+}

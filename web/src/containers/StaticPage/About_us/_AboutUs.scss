@@ -1,0 +1,54 @@
+.about-us-page {
+	background-color: #202020;
+	color: white;
+	font-size: 1.2rem;
+	h1,
+	h2,
+	h3 {
+		color: white !important;
+	}
+	p {
+		opacity: 0.8;
+	}
+	.contact-header {
+		border-bottom: solid 2px rgba(225, 226, 216, 0.33);
+		h1 {
+			color: #e1e2d8 !important;
+		}
+	}
+	.our-goal {
+		// background-color: #2b2b2b;
+		border-radius: 5px;
+		flex-direction: row;
+		display: flex;
+		@media screen and (max-width: 999px) {
+			flex-direction: column;
+			.desc {
+				order: 1;
+			}
+			.image {
+				order: 0;
+			}
+		}
+		.desc {
+			flex: 1;
+		}
+		.image {
+			padding: 50px;
+			display: flex;
+			justify-content: center;
+			img {
+				width: 200px;
+			}
+		}
+	}
+	.features {
+		.feature-card {
+			background-color: #2b2b2b;
+			border-radius: 5px;
+			height: 100%;
+			padding: 15px;
+			margin-top: 10px;
+		}
+	}
+}

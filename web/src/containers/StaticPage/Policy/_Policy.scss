@@ -1,0 +1,52 @@
+.policy-page {
+	background-color: #202020;
+	color: white;
+	font-size: 1.2rem;
+	h1,
+	h2,
+	h3,
+	h4 {
+		color: white !important;
+	}
+	p {
+		opacity: 0.8;
+	}
+	.contact-header {
+		border-bottom: solid 2px rgba(225, 226, 216, 0.33);
+		h1 {
+			color: #e1e2d8 !important;
+		}
+	}
+	.policy-container {
+		display: flex;
+		height: 80vh;
+		.left-menu {
+			width: 25%;
+			overflow: auto;
+			@media screen and (max-width: 767px) {
+				display: none;
+			}
+			.link-item {
+				cursor: pointer;
+				opacity: 0.8;
+				&:hover {
+					opacity: 1;
+				}
+				span {
+					width: 30px;
+				}
+				p {
+					flex: 1;
+				}
+			}
+		}
+		.policy-text {
+			flex: 1;
+			height: 100%;
+			overflow: auto;
+			@media screen and (min-width: 768px) {
+				margin-left: 50px;
+			}
+		}
+	}
+}

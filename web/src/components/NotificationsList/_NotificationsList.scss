@@ -1,0 +1,34 @@
+.layout-mobile {
+	.trade_active_orders-wrapper {
+		max-height: 35vh !important;
+	}
+}
+
+.trade_post_icon {
+	width: 1.5rem;
+
+	svg {
+		.wave-icon {
+			fill: $colors-black;
+		}
+	}
+}
+
+.post_header {
+	font-weight: bold;
+}
+.trade_announcement {
+	font-size: 1.5rem;
+}
+
+.post-content {
+	.notifications_list-item-text {
+		a {
+			color: $link;
+		}
+		span,
+		p {
+			background-color: $app-sidebar-background !important;
+		}
+	}
+}

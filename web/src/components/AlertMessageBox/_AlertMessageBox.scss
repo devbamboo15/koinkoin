@@ -1,0 +1,15 @@
+.error-message-box {
+	padding: 4px 20px;
+	border-radius: 5px;
+	color: white;
+	background: #ff0f00d1;
+	position: relative;
+	span {
+		font-size: 11px;
+	}
+	.alert-icon {
+		position: absolute;
+		right: 2px;
+		top: 2px;
+	}
+}

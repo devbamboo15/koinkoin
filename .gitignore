@@ -1,0 +1,46 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+
+# idea
+.idea/
+
+# testing
+web/coverage
+
+# production
+build
+
+# surge
+web/CNAME
+server/tools/hollaex-kit.env.local
+
+# misc
+web/.DS_Store
+web/.env
+web/.env.local
+web/.env.development.local
+web/.env.test.local
+web/.env.production.local
+
+web/npm-debug.log*
+web/yarn-debug.log*
+web/yarn-error.log*
+
+web/src/**/*.css
+
+#HollaEx CLI related
+templates/local/nginx/conf.d/*
+templates/local/logs/*
+templates/local/*.yaml
+templates/local/*.env.local
+templates/local/letsencrypt/*
+
+templates/kubernetes/config/*
+
+.DS_Store
+
+.token
+backups
+*.junk

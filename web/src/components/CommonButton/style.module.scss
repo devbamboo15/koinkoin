@@ -1,0 +1,125 @@
+.commonButton {
+	margin: auto;
+	cursor: pointer;
+	min-width: 160px;
+	height: 29px;
+	display: -ms-flexbox;
+	-ms-flex-flow: row nowrap;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	-webkit-align-content: center;
+	-webkit-justify-content: center;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	-webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	-ms-writing-mode: lr-tb;
+	-webkit-writing-mode: horizontal-tb;
+	writing-mode: horizontal-tb;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-style: solid;
+	overflow: hidden;
+
+	background-color: rgba(0, 120, 255, 0);
+	border-radius: 0px;
+	border-width: 1px;
+	border-color: rgb(104, 104, 104);
+	font-family: Arial Black;
+	font-weight: 700;
+	font-style: normal;
+	color: rgb(104, 104, 104);
+	font-size: 12px;
+	letter-spacing: 1px;
+	&:hover {
+		background-color: rgb(0, 120, 255);
+		color: rgb(255, 255, 255);
+		border-color: rgb(0, 120, 255);
+	}
+}
+
+.animationContainer {
+	transform: matrix(1, 0, 0, 1, 0, 0);
+	animation-name: animation_18_1_reverse;
+	animation-duration: 0.8s;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+	animation-direction: alternate;
+	animation-fill-mode: none;
+	&:hover {
+		transform: matrix(1.07, 0, 0, 1.07, 0, 0);
+		animation-name: animation_18_1;
+		animation-duration: 0.8s;
+		animation-delay: 0s;
+		animation-iteration-count: 1;
+		animation-direction: alternate;
+		animation-fill-mode: none;
+	}
+}
+
+.hangingAnimation {
+	transform: matrix(1, 0, 0, 1, 0, 0);
+	animation-name: animation_17_1, animation_17_2;
+	animation-duration: 0.9s, 0.4s, 0.8s;
+	animation-delay: 0s, 0.9s, 0s;
+	animation-iteration-count: 1, infinite, infinite;
+	animation-direction: alternate, alternate, alternate;
+	animation-fill-mode: none, none, none;
+	animation-play-state: running;
+}
+
+@keyframes animation_17_1 {
+	0% {
+		transform: translate(0px, 0px) rotate(0deg) scale(0.9);
+		opacity: 0;
+		animation-timing-function: ease-out;
+	}
+	66.6667% {
+		transform: translate(0px, 1px) rotate(0deg) scale(1);
+		opacity: 1;
+		animation-timing-function: ease-out;
+	}
+	100% {
+		transform: translate(0px, -2px) rotate(1deg) scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes animation_17_2 {
+	0% {
+		transform: translate(0px, -2px) rotate(1deg) scale(1);
+		opacity: 1;
+		animation-timing-function: ease-out;
+	}
+	100% {
+		transform: translate(0px, -2px) rotate(-1deg) scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes animation_18_1 {
+	0% {
+		transform: matrix(1, 0, 0, 1, 0, 0);
+		opacity: 1;
+		animation-timing-function: ease-out;
+	}
+	100% {
+		transform: matrix(1.07, 0, 0, 1.07, 0, 0);
+		opacity: 1;
+	}
+}
+
+@keyframes animation_18_1_reverse {
+	0% {
+		transform: matrix(1.07, 0, 0, 1.07, 0, 0);
+		opacity: 1;
+		animation-timing-function: ease-out;
+	}
+	100% {
+		transform: matrix(1, 0, 0, 1, 0, 0);
+		opacity: 1;
+	}
+}
